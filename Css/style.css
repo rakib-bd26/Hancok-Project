@@ -1,0 +1,105 @@
+/* Common CSS Start */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+body {
+    font-family: 'Oswald', sans-serif;
+}
+
+/* Container */
+.container {
+    width: 1320px;
+    margin: 0 auto;
+}
+
+/* Common CSS End */
+
+
+/* Header Start */
+#headerpart {
+    padding: 35px 0;
+    width: 100%;
+    background-color: black;
+}
+
+.headercontent {
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Logo */
+.logo a {
+    color: #FFFFFF;
+    font-size: 46px;
+    font-weight: 700;
+}
+
+.logo span {
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    background: #ff3045;
+    border-radius: 50%;
+    margin-left: 8px;
+    font-size: 0;
+    vertical-align: middle;
+}
+
+/* Navigation */
+.mainmenu ul {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.mainmenu ul li a {
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 400;
+    transition: 0.3s;
+}
+
+.mainmenu ul li a:hover {
+    color: #ff3045;
+}
+
+/* Header Right */
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 29px;
+}
+
+.header-right a {
+    color: #ffffff;
+    font-size: 16px;
+    white-space: nowrap;
+    transition: 0.3s;
+}
+
+/* Sign In */
+.header-right .signin {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+/* Hover */
+.header-right a:hover {
+    color: #ff3045;
+}
+
+/* Header End */
