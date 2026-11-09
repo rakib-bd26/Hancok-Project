@@ -102,4 +102,155 @@ body {
     color: #ff3045;
 }
 
-/* Header End */
+/* Header End  here */
+
+
+
+/* Banner Part Start */
+#bannerpart {
+    padding-top: 270px;
+    padding-left: 2px;
+    background-image: url("../images/banner\ images.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 100px 0 60px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.bannercontent {
+    min-height: 550px;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+/* Left Content */
+
+.bannerText {
+    width: 48%;
+    position: relative;
+    /* z-index: 2; */
+}
+
+.bannerText h4 {
+    color: #ffffff;
+    font-size: 27px;
+    font-weight: 400;
+    letter-spacing:10%;
+    margin-bottom: 5px;
+}
+
+.bannerText h1 {
+    color: #ffffff;
+    font-size: 60px;
+    font-weight: 600;
+    line-height:auto;
+    /* white-space: nowrap; */
+    margin-bottom:5px;
+    position: relative;
+}
+
+.bannerText h1::after {
+    content: "";
+    width: 60px;
+    height: 2px;
+    background: #ffffff;
+    position: absolute;
+    right: 78px;
+    top: 47%;
+    
+}
+
+
+.bannerText p {
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 22px;
+    max-width: 480px;
+    margin-bottom: 25px;
+}
+
+/* Button */
+
+.bannerbtn a {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 18px;
+    background: #ffffff;
+    color: #111111;
+    font-size: 14px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.bannerbtn a:hover {
+    background: #ff3045;
+    color: #ffffff;
+}
+
+/* Right Image Area */
+
+.bannerVisual {
+    width: 60%;
+    height: 550px;
+    position: absolute;
+    right: -30px;
+    top: 0;
+    z-index: 1;
+}
+
+    
+
+/* Red Circle */
+
+.redcircle {
+    width: 450px;
+    height: 450px;
+    background: #ff3045;
+    border-radius: 50%;
+    position: absolute;
+    right: 0;
+    bottom: -80px;
+    z-index: 1;
+}
+
+/* Social Icons */
+
+.socialIcon {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    z-index: 3;
+}
+
+.socialIcon a {
+    width: 25px;
+    height: 25px;
+    background: #ffffff;
+    color: #111111;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 13px;
+    transition: 0.3s;
+}
+
+.socialIcon a:hover {
+    background: #ff3045;
+    color: #ffffff;
+}
+
+/* Banner Part End */
+
+
+/* Banner Part End */
+
+
