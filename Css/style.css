@@ -14,6 +14,7 @@ ul {
 }
 
 body {
+    background: #121212;
     font-family: 'Oswald', sans-serif;
 }
 
@@ -251,6 +252,337 @@ body {
 /* Banner Part End */
 
 
+/* About Part Start */
+
+#aboutpart {
+    margin-top:34px;
+     margin-bottom: 80px;
+}
+
+/* Section Heading */
+
+ .aboutHeading {
+    margin-bottom: 57px;
+}
+
+.aboutHeading h2 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 38px;
+    font-weight: 600;
+    line-height:auto;
+    letter-spacing: 7%;
+    color: #ffffff;
+    position: relative;
+   
+}
+
+.aboutHeading h2 span ::after{
+    content: "";
+    width: 150px;
+    height: 150px;
+    /* border-top: 4px solid #ff4655; */
+    border-right: 4px solid #ff4655;
+    position: absolute;
+    top: -6px;
+    left: -6px;
+    z-index: -1;
+} */
+.aboutHeading {
+    margin-bottom: 57px;
+}
+
+.aboutHeading h2 {
+    padding-bottom: 57px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 38px;
+    font-weight: 600;
+    line-height: 1.3;
+    letter-spacing: 2px;
+    color: #ffffff;
+    position: relative;
+    display: inline-block;
+}
+
+.aboutHeading h2::after {
+    content: "";
+    width: 150px;
+    height: 3px;
+    background: #ff4655;
+    position: absolute;
+    top: 50%;
+    left: 42%;
+    margin-left: 15px;
+    transform: translateY(-50%);
+}
+/* About Content */
+
+.aboutContent {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap:82px;
+    position: relative;
+}
+
+/* Left Image */
+
+.aboutImage {
+    width:708px
+    /* z-index: 1; */
+}
+
+.aboutImage img {
+    /* position: relative; */
+    width:708px;
+    height: 407px;
+    object-fit: cover;
+    display: block;
+    border-bottom-right-radius: 35px;
+}
+
+/* Image Red Corner */
+
+.aboutImage::before {
+    content: "";
+    width: 150px;
+    height: 150px;
+    border-top: 4px solid #ff4655;
+    border-left: 4px solid #ff4655;
+    position: absolute;
+    top: -6px;
+    left: -6px;
+    /* z-index: -1; */
+}
+
+/* Right Text */
+
+.aboutText {
+    width: 501px;
+}
+
+.aboutText h3 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 22px;
+    font-weight: 500;
+    color: #ffffff;
+    margin-bottom: 15px;
+}
+
+
+.aboutText ul {
+    list-style: none;
+    padding: 0;
+}
+
+.aboutText ul li {
+    margin-bottom: 15px;
+    color: #ffffff;
+    font-size: 16px;
+}
+
+.aboutText ul li i {
+    color: #FF4655;
+    margin-right: 10px;
+    font-size: 14px;
+}
+
+
+.aboutText p {
+    font-family: 'Oswald', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.7;
+    color: #dddddd;
+    margin-bottom: 20px;
+}
+
+/* View More Button */
+
+.aboutBtn {
+    display: inline-block;
+    text-decoration: none;
+    background: #222222;
+    color: #ffffff;
+    font-family: 'Oswald', sans-serif;
+    font-size: 13px;
+    padding: 12px 20px;
+    transition: 0.3s;
+}
+
+.aboutBtn i {
+    margin-left: 8px;
+}
+
+.aboutBtn:hover {
+    background: rgba(80, 80, 75, 0.4);
+    color: #ffffff;
+}
+
+/* Counter Cards */
+
+.aboutCounter {
+    display: flex;
+    justify-content: space-between;
+    gap: 18px;
+    margin-top: 45px;
+}
+
+.counterItem {
+    width: 25%;
+    background: #222222;
+    padding: 25px 15px;
+    text-align: center;
+    border-radius: 0 25px 0 25px;
+}
+
+.counterItem h2 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 38px;
+    font-weight: 600;
+    color: #ffffff;
+    margin-bottom: 12px;
+}
+
+.counterItem h2 span {
+    color: #ff4655;
+}
+
+.counterItem p {
+    font-family: 'Oswald', sans-serif;
+    font-size: 13px;
+    font-weight: 300;
+    color: #cccccc;
+    margin: 0;
+}
+
+/* About Part End */
+
+
+
+
+/* popular part start here */
+#popularpart {
+   margin-top: 70px;
+   margin-bottom: 110px;
+}
+
+.popularFlex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+
+.popularLeft {
+    width: 651px;
+    height: 564px;
+    position: relative;
+}
+
+.popularShape {
+    width: 651px;
+    height: 390px;
+    position: absolute;
+    left: 0px;
+    top: 216px;
+    z-index: 1;
+}
+
+.popularShape img {
+    width: 100%;
+    height:auto;
+}
+
+.populartop img {
+    width: 690px;
+    height: 565px;
+    position: absolute;
+   left: -57px;
+  bottom: -43px;
+    z-index: 2;
+}
+
+.popularRight {
+    width: 651px;
+    height: 400px;
+}
+
+.popularHeading {
+    width: 100%;
+    height: auto;
+    text-align: right;
+    margin-bottom: 25px;
+    padding-top:0px;
+    box-sizing: border-box;
+}
+
+.popularHeading h4 {
+    color: #ffffff;
+    font-family: 'Oswald', sans-serif;
+    font-size: 36px;
+    font-weight: 600;
+    line-height:auto;
+    margin: 0;
+    letter-spacing:7%;
+}
+
+.popularHeading h4:last-child {
+    position: relative;
+}
+
+.popularHeading h4:last-child::before {
+    content: "";
+    width: 150px;
+    height: 4px;
+    background: #FF4655;
+    position: absolute;
+    right: 195px;
+    top: 80%;
+    transform: translateY(-50%);
+}
+
+.popularImage {
+    width: 100%;
+    height: 400px;
+    position: relative;
+    overflow: visible;
+}
+
+.popularImage img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.popularArrow {
+    position: absolute;
+    right: -30px;
+    bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.popularArrow a {
+    width: 24px;
+    height: 24px;
+    border: 1px solid #ffffff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    font-size: 11px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.popularArrow a:hover {
+    background: #212121;
+    border-color: #e2dede;
+}
+/* popular part Eand here */
 
 
 
