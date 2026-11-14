@@ -1,4 +1,6 @@
+
 /* Common CSS Start */
+
 * {
     margin: 0;
     padding: 0;
@@ -15,34 +17,31 @@ ul {
 
 body {
     background: #121212;
-    font-family: 'Oswald', sans-serif;
+    font-family: "Oswald", sans-serif;
 }
 
-/* Container */
 .container {
     width: 1320px;
     margin: 0 auto;
 }
-
 /* Common CSS End */
 
 
 /* Header Start */
-#headerpart {
-    padding: 35px 0;
+ #headerpart {
     width: 100%;
-    background-color: black;
+    position: absolute;
+    z-index: 2;
 }
 
 .headercontent {
-    height: 36px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-}
+} 
 
 /* Logo */
-.logo a {
+ .logo a {
     color: #FFFFFF;
     font-size: 46px;
     font-weight: 700;
@@ -50,243 +49,166 @@ body {
 
 .logo span {
     display: inline-block;
-    width: 6px;
-    height: 6px;
-    background: #ff3045;
+    width: 8px;
+    height: 8px;
+    background-color: #ff3045;
     border-radius: 50%;
-    margin-left: 8px;
+    margin-left: 12px;
     font-size: 0;
-    vertical-align: middle;
-}
-
+    vertical-align: baseline;
+} 
 /* Navigation */
-.mainmenu ul {
+ .mainmenu ul {
     display: flex;
     align-items: center;
     gap: 30px;
 }
 
 .mainmenu ul li a {
-    color: #ffffff;
+    margin-bottom: 16px;
+    color: #DDDDDD;
     font-size: 16px;
-    font-weight: 400;
-    transition: 0.3s;
 }
 
 .mainmenu ul li a:hover {
-    color: #D9D9D9;
-}
+    color: #9c9292;
+} 
 
-/* Header Right */
-.header-right {
+ .header-right {
     display: flex;
     align-items: center;
-    gap: 29px;
+    gap: 30px;
 }
 
 .header-right a {
-    color: #ffffff;
+    color: #DDDDDD;
     font-size: 16px;
-    white-space: nowrap;
     transition: 0.3s;
 }
 
-/* Sign In */
-.header-right .signin {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-}
-
-/* Hover */
 .header-right a:hover {
     color: #D9D9D9;
-}
+} 
 
-/* Header End  here */
+/* Header End */
+
 
 
 
 /* Banner Part Start */
 #bannerpart {
-    padding-top: 270px;
-    padding-left: 2px;
-    background-image: url("../images/banner\ \ img.png");
+    margin-top: 30px;
+    padding-top: 120px;
+    padding-bottom: 80px;
+    width: 100%;
+    height: 1080px;
+    background-image: url("../images/nav banner.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    padding: 100px 0 60px;
-    width: 100%;
     overflow: hidden;
+    position: relative;
+    z-index: 1;
 }
 
 .bannercontent {
-    min-height: 550px;
-    position: relative;
-    display: flex;
-    align-items: center;
+    width: 410px;
+    height: 390px;
+    padding-top: 270px;
 }
 
 /* Left Content */
-
 .bannerText {
-    width: 48%;
-    position: relative;
-    /* z-index: 2; */
+    width: 611px;
 }
 
 .bannerText h4 {
-    color: #ffffff;
+    color: #FFFFFF;
     font-size: 27px;
     font-weight: 400;
-    letter-spacing:10%;
-    margin-bottom: 5px;
+    line-height: normal;
+    margin-bottom: 13px;
 }
 
 .bannerText h1 {
     color: #ffffff;
-    font-size: 60px;
+    font-size: 50px;
     font-weight: 600;
-    line-height:auto;
-    /* white-space: nowrap; */
-    margin-bottom:5px;
+    line-height: normal;
+    white-space: nowrap;
+    margin-bottom: 18px;
     position: relative;
 }
 
 .bannerText h1::after {
     content: "";
-    width: 60px;
-    height: 2px;
+    width: 78px;
+    height: 4px;
     background: #ffffff;
     position: absolute;
-    right: 78px;
-    top: 47%;
-    
+    right: 91px;
+    top: 73%;
 }
-
 
 .bannerText p {
-    color: #ffffff;
-    font-size: 13px;
-    font-weight: 300;
-    line-height: 22px;
-    max-width: 480px;
-    margin-bottom: 25px;
+    color: #FFFFFF;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 48px;
 }
 
-/* Button */
+.bannerbtn {
+    padding-bottom: 300px;
+}
 
 .bannerbtn a {
     display: inline-flex;
     align-items: center;
-    gap: 10px;
-    padding: 10px 18px;
+    gap: 6px;
+    padding: 14px 24px;
     background: #ffffff;
     color: #111111;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 500;
     transition: 0.3s;
 }
 
 .bannerbtn a:hover {
     background: #D9D9D9;
-    color: #ffffff;
-}
-
-/* Right Image Area */
-
-.bannerVisual {
-    width: 60%;
-    height: 550px;
-    position: absolute;
-    right: -30px;
-    top: 0;
-    z-index: 1;
-}
-
-    
-
-/* Red Circle */
-
-.redcircle {
-    width: 450px;
-    height: 450px;
-    background: #D9D9D9;
-    border-radius: 50%;
-    position: absolute;
-    right: 0;
-    bottom: -80px;
-    z-index: 1;
 }
 
 /* Social Icons */
-
 .socialIcon {
-    position: absolute;
-    left: 0;
-    bottom: 0;
     display: flex;
-    align-items: center;
-    gap: 12px;
-    z-index: 3;
+    gap: 20px;
+    margin-bottom: 103px;
 }
 
 .socialIcon a {
-    width: 25px;
-    height: 25px;
+    width: 35px;
+    height: 35px;
     background: #ffffff;
     color: #111111;
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 13px;
     transition: 0.3s;
 }
 
 .socialIcon a:hover {
     background: #D9D9D9;
-    color: #ffffff;
 }
-
 /* Banner Part End */
 
 
 /* About Part Start */
-
 #aboutpart {
-    margin-top:34px;
-     margin-bottom: 80px;
+    margin-top: 34px;
+    margin-bottom: 80px;
 }
 
-/* Section Heading */
-
- .aboutHeading {
-    margin-bottom: 57px;
-}
-
-.aboutHeading h2 {
-    font-family: 'Oswald', sans-serif;
-    font-size: 38px;
-    font-weight: 600;
-    line-height:auto;
-    letter-spacing: 7%;
-    color: #ffffff;
-    position: relative;
-   
-}
-
-.aboutHeading h2 span ::after{
-    content: "";
-    width: 150px;
-    height: 150px;
-    /* border-top: 4px solid #ff4655; */
-    border-right: 4px solid #ff4655;
-    position: absolute;
-    top: -6px;
-    left: -6px;
-    z-index: -1;
-} */
 .aboutHeading {
     margin-bottom: 57px;
 }
@@ -301,6 +223,8 @@ body {
     color: #ffffff;
     position: relative;
     display: inline-block;
+    margin-bottom: 50px;
+    padding-top: 50px;
 }
 
 .aboutHeading h2::after {
@@ -314,26 +238,26 @@ body {
     margin-left: 15px;
     transform: translateY(-50%);
 }
-/* About Content */
 
+/* About Content */
 .aboutContent {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap:82px;
+    gap: 82px;
     position: relative;
 }
 
 /* Left Image */
-
 .aboutImage {
-    width:708px
-    /* z-index: 1; */
+    width: 708px;
+    z-index: 1;
+    position: relative;
 }
 
 .aboutImage img {
-    /* position: relative; */
-    width:708px;
+    position: relative;
+    width: 708px;
     height: 407px;
     object-fit: cover;
     display: block;
@@ -341,7 +265,6 @@ body {
 }
 
 /* Image Red Corner */
-
 .aboutImage::before {
     content: "";
     width: 150px;
@@ -351,11 +274,9 @@ body {
     position: absolute;
     top: -6px;
     left: -6px;
-    /* z-index: -1; */
+    z-index: -1;
 }
-
 /* Right Text */
-
 .aboutText {
     width: 501px;
 }
@@ -367,7 +288,6 @@ body {
     color: #ffffff;
     margin-bottom: 15px;
 }
-
 
 .aboutText ul {
     list-style: none;
@@ -386,7 +306,6 @@ body {
     font-size: 14px;
 }
 
-
 .aboutText p {
     font-family: 'Oswald', sans-serif;
     font-size: 14px;
@@ -397,7 +316,6 @@ body {
 }
 
 /* View More Button */
-
 .aboutBtn {
     display: inline-block;
     text-decoration: none;
@@ -417,7 +335,6 @@ body {
     background: rgba(80, 80, 75, 0.4);
     color: #ffffff;
 }
-
 /* Counter Cards */
 
 .aboutCounter {
@@ -454,16 +371,14 @@ body {
     color: #cccccc;
     margin: 0;
 }
-
 /* About Part End */
 
 
+/* Popular Part Start */
 
-
-/* popular part start here */
 #popularpart {
-   margin-top: 70px;
-   margin-bottom: 110px;
+    margin-top: 70px;
+    margin-bottom: 110px;
 }
 
 .popularFlex {
@@ -472,7 +387,6 @@ body {
     align-items: center;
     gap: 20px;
 }
-
 
 .popularLeft {
     width: 651px;
@@ -484,22 +398,22 @@ body {
     width: 651px;
     height: 390px;
     position: absolute;
-    left: 0px;
+    left: 0;
     top: 216px;
     z-index: 1;
 }
 
 .popularShape img {
     width: 100%;
-    height:auto;
+    height: auto;
 }
 
 .populartop img {
     width: 690px;
     height: 565px;
     position: absolute;
-   left: -57px;
-  bottom: -43px;
+    left: -57px;
+    bottom: -43px;
     z-index: 2;
 }
 
@@ -513,7 +427,7 @@ body {
     height: auto;
     text-align: right;
     margin-bottom: 25px;
-    padding-top:0px;
+    padding-top: 0;
     box-sizing: border-box;
 }
 
@@ -522,9 +436,9 @@ body {
     font-family: 'Oswald', sans-serif;
     font-size: 36px;
     font-weight: 600;
-    line-height:auto;
+    line-height: normal;
     margin: 0;
-    letter-spacing:7%;
+    letter-spacing: 2px;
 }
 
 .popularHeading h4:last-child {
@@ -582,7 +496,244 @@ body {
     background: #212121;
     border-color: #e2dede;
 }
-/* popular part Eand here */
+/* Popular Part End */
 
 
+/* Gaming Section */
+.gaming-section {
+    padding: 70px 20px;
+}
 
+/* Header Styles */
+.section-header {
+    margin-bottom: 45px;
+}
+
+.section-header h2 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 32px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    line-height: 1.25;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+.red-line {
+    display: inline-block;
+    width: 90px;
+    height: 3px;
+    background-color: #e53935;
+    margin-left: 10px;
+    vertical-align: bottom;
+    margin-bottom: 6px;
+}
+
+/* Video Cards Grid */
+
+.video-grid {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 65px;
+}
+
+.video-card {
+    position: relative;
+    flex: 1;
+    height: 220px;
+    overflow: hidden;
+    cursor: pointer;
+    filter: grayscale(100%);
+    opacity: 0.85;
+    transition: all 0.35s ease;
+    background-color: #1e1e1e;
+}
+
+/* Active Card (Middle Card) */
+
+.video-card.active,
+.video-card:hover {
+    flex: 1.12;
+    height: 245px;
+    filter: grayscale(0%);
+    opacity: 1;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.7);
+}
+
+.video-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* Dark Bottom Gradient Overlay */
+
+.video-card .overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        to top,
+        rgba(0, 0, 0, 0.85) 0%,
+        rgba(0, 0, 0, 0.25) 55%,
+        rgba(0, 0, 0, 0.1) 100%
+    );
+}
+
+/* Center Play Button */
+
+.play-btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 54px;
+    height: 54px;
+    border-radius: 50%;
+    border: 1.5px solid rgba(255, 255, 255, 0.75);
+    background: rgba(0, 0, 0, 0.25);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.video-card:hover .play-btn {
+    transform: translate(-50%, -50%) scale(1.08);
+    background: rgba(229, 57, 53, 0.8);
+    border-color: #ffffff;
+}
+
+.play-btn .triangle {
+    width: 0;
+    height: 0;
+    border-top: 8px solid transparent;
+    border-bottom: 8px solid transparent;
+    border-left: 13px solid #ffffff;
+    margin-left: 4px;
+}
+
+/* Card Bottom Info & Live Badge */
+
+.card-footer {
+    position: absolute;
+    bottom: 16px;
+    left: 18px;
+    right: 18px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    z-index: 2;
+}
+
+.game-info h3 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 0.8px;
+    color: #ffffff;
+}
+
+.game-info p {
+    font-size: 13px;
+    color: #cccccc;
+    margin-top: 2px;
+}
+
+.live-badge {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    color: #ffffff;
+}
+
+.live-badge .dot {
+    width: 6px;
+    height: 6px;
+    background-color: #e53935;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+/* Previous Matches Section */
+.matches-wrapper {
+    max-width: 860px;
+    margin: 0 auto;
+}
+
+.matches-title {
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    color: #e0e0e0;
+    margin-bottom: 35px;
+}
+
+.match-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 32px;
+}
+
+/* Slanted / Trapezoid Team Boxes */
+.team-box {
+    background-color: #212121;
+    width: 340px;
+    height: 82px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 35px;
+    transition: background-color 0.3s ease;
+}
+
+.team-box:hover {
+    background-color: #2a2a2a;
+}
+
+/* Left Box Slanted Right Edge */
+.team-left {
+    clip-path: polygon(0 0, 100% 0, 92% 100%, 0% 100%);
+    padding-right: 45px;
+}
+
+/* Right Box Slanted Left Edge */
+.team-right {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 8% 100%);
+    padding-left: 45px;
+}
+
+.team-logo {
+    width: 62px;
+    height: 62px;
+    object-fit: contain;
+}
+
+.team-name {
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 1.5px;
+    color: #f5f5f5;
+}
+
+.match-score {
+    font-family: 'Oswald', sans-serif;
+    font-size: 28px;
+    font-weight: 600;
+    letter-spacing: 4px;
+    color: #ffffff;
+    text-align: center;
+    min-width: 110px;
+}
+ 
